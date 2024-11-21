@@ -1,0 +1,42 @@
+body {
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #ECC1A6;
+}
+body .i a {
+  padding: 0.5rem;
+  background: #A9978B;
+  border-radius: 10px;
+  text-decoration-line: none;
+  color: #FFFFFF;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  border: 2.5px solid #8D7C71;
+  font-size: 1em;
+}
+body .i a:hover {
+  transform: scale(1.1, 1.2);
+}
+.sliding-title {
+    font-size: 1.5em;
+    color: #FFFFFF;
+    animation: slide-in 2s ease-in-out forwards;
+    transform: translateX(-100%);
+}
+
+/* MGA TOOLS PANG ANIMATE */
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
